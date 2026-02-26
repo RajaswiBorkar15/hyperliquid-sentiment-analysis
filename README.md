@@ -16,3 +16,65 @@ This repository contains a comprehensive analysis of the correlation between the
 ```bash
 git clone [https://github.com/RajaswiBorkar15/hyperliquid-sentiment-analysis.git](https://github.com/RajaswiBorkar15/hyperliquid-sentiment-analysis.git)
 cd hyperliquid-sentiment-analysis
+```
+**2. Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+**3. Run the notebook**
+Open assignment.ipynb in Jupyter Notebook or VS Code to reproduce the analysis.
+
+**4.Launch the dashboard**
+```bash
+streamlit run app.py
+```
+
+## 🛠 Methodology
+
+### Data Preparation
+- Loaded Fear & Greed sentiment data and Hyperliquid trade data.
+- Checked dataset shapes, missing values, and duplicates.
+- Converted timestamps to daily granularity.
+- Standardized sentiment labels (Extreme Fear → Fear, Extreme Greed → Greed).
+- Merged datasets on Date.
+- Computed daily trader metrics: PnL, win rate, average trade size, number of trades, long/short ratio.
+- Classified traders into **Frequent vs Infrequent** segments.
+
+### Analysis
+- Compared performance (PnL, win rate) across **Fear vs Greed days**.
+- Examined behavioral shifts (frequency, position size, bias).
+- Segmented traders into archetypes using **K-Means clustering**.
+
+### Visualization
+- Bar charts for average PnL, win rate, trade frequency.
+- Scatter plots for win rate vs PnL.
+- Clustering visualization of trader archetypes.
+
+---
+
+## 🔑 Key Insights
+1. **Fear days concentrate PnL among active traders** — frequent traders often capture outsized gains.  
+2. **Win rate alone is not predictive of profitability** — trade sizing and exposure drive PnL variance.  
+3. **Behavior shifts by sentiment** — some traders increase trade size on Fear days, others increase frequency.
+
+---
+
+## 🚀 Strategy Recommendations
+- **Rule A (Frequent traders):** Reduce leverage on Greed days; increase position sizing selectively on Fear days.  
+- **Rule B (Infrequent traders):** Use smaller, higher-probability trades on Greed days; opportunistic larger positions only on Fear days with clear signals.
+
+---
+
+## 🎯 Bonus Features
+- **Trader Archetypes:** Clustered accounts into 3 behavioral groups (high-volume, opportunistic, conservative).  
+- **Streamlit Dashboard:** Interactive filters for sentiment and trader type, with KPIs and charts.  
+- **Predictive Modeling (optional):** Framework for next-day profitability prediction using sentiment + behavior features.
+
+---
+
+## 📝 Deliverables
+- Jupyter Notebook (`assignment.ipynb`)  
+- Processed dataset (`processed_metrics.csv`)  
+- Streamlit dashboard (`app.py`)  
+- This README.md (methodology, insights, strategy recommendations)
+
