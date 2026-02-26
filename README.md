@@ -72,6 +72,21 @@ streamlit run app.py
 
 ---
 
+## 📊 Outputs & Visuals
+
+Key charts from the analysis are saved in the `outputs/` folder:
+- `performance.png` → Average Daily PnL & Win Rate by Sentiment
+- `behavior_changes.png` → Trade Frequency, Position Size, Long/Short Ratio
+- `segment_pnl.png` → Daily PnL by Trader Segment & Sentiment
+- `clustering.png` → Trader Archetypes visualization
+
+Screenshots of the Streamlit dashboard are stored in the `images/` folder:
+- `dashboard_overview.png` → Dashboard overview with KPIs
+- `dashboard_frequent.png` → Frequent trader segment view
+- `dashboard_infrequent.png` → Infrequent trader segment view
+
+---
+
 ## 📝 Deliverables
 - Jupyter Notebook (`assignment.ipynb`)  
 - Processed dataset (`processed_metrics.csv`)  
