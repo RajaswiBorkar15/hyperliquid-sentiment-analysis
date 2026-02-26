@@ -89,12 +89,12 @@ streamlit run app.py
 ![Average Daily PnL by Sentiment](Outputs/Performance.png)
 
 ### Behavior Changes
-![Trade Frequency, Position Size, Long/Short Ratio](Outputs/behaviuor_changes.png)
+![Trade Frequency, Position Size, Long/Short Ratio](Outputs/Classification.png)
 
 ### Segmentation
 ![Daily PnL by Trader Segment & Sentiment](Outputs/Segmentation.png)
 
-### Trader Archetypes
+### Trader Archetypes (K-Means Clustering)
 ![Trader Archetypes: Total PnL vs Total Trades](Outputs/Clustering.png)
 
 ---
